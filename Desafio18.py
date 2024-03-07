@@ -1,7 +1,9 @@
-from math import cos, sin, tan
-angulo = int(input("Digite um ângulo: "))
-seno = sin(angulo)
-cosseno = cos(angulo)
-tanjente = tan(angulo)
+from math import cos, sin, tan, radians
+angulo = float(input("Digite um ângulo: "))
+seno = sin(radians(angulo))
+cosseno = cos(radians(angulo))
+tangente = tan(radians(angulo))
 
-print('O ângulo {} possui como seno {} radiano, como cosseno {} radiano e a tangente {} radiano.'.format(angulo, seno, cosseno, tanjente))
+print(f'O ângulo {angulo:.2f} possui como SENO {seno:.2f};')
+print(f'Como COSSENO {cosseno:.2f};')
+print(f'E a TANGENTE {tangente:.2f}.')
